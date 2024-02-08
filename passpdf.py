@@ -16,6 +16,7 @@ for page in range(original_file.numPages):
     writer.addPage(original_file.getPage(page))
 
 # Retrieve a preferred password from the user 
+# Copies the content of the original file to the writer varibale
 password = getpass.getpass(prompt = "Set a Password: ")
 
 # Encrypt the copy of the original file
